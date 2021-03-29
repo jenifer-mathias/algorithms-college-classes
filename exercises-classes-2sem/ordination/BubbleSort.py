@@ -2,18 +2,14 @@
 
 lista = [25, 21, 22, 24, 23, 27, 26]
 
-indexUltimoElemento = len(lista) - 1
-
 print(lista)
 
+indexUltimoElemento = len(lista) - 1
 
-def bubbleSort(lista):
-    for bloqueio in range(indexUltimoElemento, 0, -1):
-        for indice in range(bloqueio):
+for i in range(indexUltimoElemento, 0, -1):
+        for indice in range(i):
             if lista[indice] > lista[indice + 1]:
                 aux = lista[indice]
                 lista[indice] = lista[indice + 1]
                 lista[indice + 1] = aux
-
-
 print(lista)
