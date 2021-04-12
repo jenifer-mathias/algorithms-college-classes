@@ -60,10 +60,8 @@ def main():
           'sem utlizar pontuações para separá-lo! \nEx: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15')
     list = []
 
-    # cria o vetor
     for i in range(n):
         aux = input()
-        # checa se todos os numeros estão  enunciados a partir do espaço
         if ' ' in aux:
             numbers = aux.strip().replace(',', ' ').split()
             if len(numbers) != n:
@@ -74,9 +72,7 @@ def main():
             break
         else:
             list.append(int(aux))
-    # chama a função de sort
     bubbleSort(list, n, m)
-    # chama a função de imprimir os resultados na tela
     outputVector(list)
 
     return
