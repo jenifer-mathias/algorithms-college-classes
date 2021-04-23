@@ -1,5 +1,4 @@
 """
-
 2º Problema - f91
 McCarthy é um teórico famoso de ciência da computação. No seu trabalho, ele definiu uma função
 recursiva chamada f91, que recebe como entrada um inteiro N e retorna um inteiro positivo definido
@@ -15,18 +14,18 @@ um programa que lê o valor de N e faz a chamada da função f91(), no final seu
 imprimir o resultado calculado. """
 
 
-def createF91(numeroInteiro):
-    if numeroInteiro <= 100:
-        return createF91(createF91(numeroInteiro + 11))
+def createF91(number):
+    if number <= 100:
+        return createF91(createF91(number + 11))
     else:
-        return numeroInteiro - 10
+        return number - 10
 
 
 def main():
     print("\n*** F91 *** \n")
     print("Digite um número inteiro para ser calculado segundo a função de McCarthy: ")
-    numeroInteiro = int(input("N: "))
-    print(createF91(numeroInteiro))
+    number = int(input("N: "))
+    print(createF91(number))
 
     return
 

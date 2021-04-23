@@ -1,5 +1,4 @@
 """
-
 3º Problema - Conjectura de Collatz
 A conjectura de Collatz, também conhecida como problema 3N + 1 é uma sequência de números,
 como a sequência de Fibonacci. Considera-se um número inteiro positivo N superior a 1. Se N for par
@@ -16,20 +15,20 @@ final imprime o resultado gerado pela função que calcula a sequência de núme
 Collatz. """
 
 
-def createConjecturaDeCollatzy(numero):
-    listaNumeros = [numero]
-    if numero <= 1:
-        return listaNumeros
-    while numero != 1:
-        if numero % 2 == 0:
-            numero = numero // 2
-            listaNumeros.append(numero)
-        elif numero % 2 == 1:
-            numero = 3 * numero + 1
-            listaNumeros.append(numero)
+def createConjecturaDeCollatzy(number):
+    listOfNumbers = [number]
+    if number <= 1:
+        return listOfNumbers
+    while number != 1:
+        if number % 2 == 0:
+            number = number // 2
+            listOfNumbers.append(number)
+        elif number % 2 == 1:
+            number = 3 * number + 1
+            listOfNumbers.append(number)
         else:
             print('Erro! Número inserido não é viável para o cálculo da Conjectura de Collatzy')
-    return listaNumeros
+    return listOfNumbers
 
 
 def main():

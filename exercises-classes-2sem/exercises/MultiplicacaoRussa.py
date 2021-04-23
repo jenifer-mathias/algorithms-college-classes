@@ -1,5 +1,4 @@
 """
-
 1º Problema - Multiplicação Russa
 A multiplicação Russa consiste em usar duas colunas de números que desejamos multiplicar, a
 primeira coluna representa o número A e a segunda coluna o número B:
