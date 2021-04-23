@@ -1,4 +1,4 @@
-""" Atividade de participação 1
+"""  Atividade de participação 1
 
  Dado um número não negativo, escreva uma função recursiva (sem loops)
  retorna a contagem das ocorrências de 7 no número inteiro informado para
@@ -18,8 +18,6 @@ def getOccurrences0fSeven(chosenNumber):
         return countNumberOccurrences
     elif (chosenNumber % 10) == 7:
         countNumberOccurrences += 1
-    else:
-        countNumberOccurrences = 0
     return countNumberOccurrences + getOccurrences0fSeven(chosenNumber // 10)
 
 
@@ -27,7 +25,7 @@ def main():
     print("\n*** Ocorrências do número 7 *** \n")
     print("Digite um número inteiro positivo para descobrir quantas vezes 7 aparece neste número: ")
     number = int(input("Número escolhido: "))
-    print("Contagem de dígitos que possuiem o número sete:", getOccurrences0fSeven(number))
+    print("Contagem de dígitos que possuem o número sete:", getOccurrences0fSeven(number))
 
     return
 
