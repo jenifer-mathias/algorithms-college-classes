@@ -15,7 +15,7 @@ final imprime o resultado gerado pela função que calcula a sequência de núme
 Collatz. """
 
 
-def createConjecturaDeCollatzy(number):
+def createCollatzConjecture(number):
     listOfNumbers = [number]
     if number <= 1:
         return listOfNumbers
@@ -32,10 +32,10 @@ def createConjecturaDeCollatzy(number):
 
 
 def main():
-    print("\n*** Conjectura de Collatzy *** \n")
+    print("\n*** Conjectura de Collatz *** \n")
     print("Digite um número inteiro para ser calculado de acordo com aa Conjectura de Collatzy: ")
     numero = int(input("N: "))
-    print(createConjecturaDeCollatzy(numero))
+    print(createCollatzConjecture(numero))
 
 
 if __name__ == "__main__":

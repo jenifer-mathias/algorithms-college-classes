@@ -18,7 +18,7 @@
 
 
 def manipulateFile(nomeAlunos, notaAlunos):
-    pathFile = "/home/jenifersantos/Área de Trabalho/second-semester/text-files"  # replace with your path
+    pathFile = " "  # replace with your path
     fileToRead = open(pathFile + 'students.txt', 'r')
     for line in fileToRead:
         values = line.replace('\n', '').split(';')
