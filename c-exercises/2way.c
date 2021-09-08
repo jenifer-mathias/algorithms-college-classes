@@ -26,7 +26,7 @@ void mergeSort(int *vetor, int total) {
     if(total < 2) return;
     meio = total / METADE;
     primeiraParte = (int*) malloc(meio* sizeof(int));
-    segundaParte = (int*) malloc(meio* sizeof(int));   // uso do malloc para alocar espaço de memória
+    segundaParte = (int*) malloc(meio* sizeof(int));   // uso do malloc para alocar espaço na memória
 
     for(i = 0; i < meio; i++)
         primeiraParte[i] = vetor[i];
@@ -38,7 +38,7 @@ void mergeSort(int *vetor, int total) {
     mergeSort(segundaParte,total - meio);
     merge(vetor, primeiraParte, meio, segundaParte,total - meio);
     free(primeiraParte);
-    free(segundaParte);     // uso do free para liberar este bloco de memória
+    free(segundaParte);     // uso do free para liberar este bloco na memória
 }
 
 int main() {
