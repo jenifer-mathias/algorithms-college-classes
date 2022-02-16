@@ -7,6 +7,10 @@
 /httpRequests/
 
 .DS_Store
-/**/.idea/*
+/c++exercises/.idea/vcs.xml
 CMakeLists.txt
-/cmake-build-debug
+cmake-build-debug
+/**/.idea/*
+CMakeFiles
+CMakeCache.txt
+
