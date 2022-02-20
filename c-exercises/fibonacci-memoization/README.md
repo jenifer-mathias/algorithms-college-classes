@@ -6,7 +6,7 @@ em que o maior problema desta árvore é o uso da recursão.
 Percebe-se que o número 2 destacado em azul, bem como os demais números aparecem diversas vezes.
 Isso faz com que o uso de memória do computador seja mais exaustivo para grandes números.
 
-#### Memoization/ memorização
+### Memoization/ memorização
 Esta técnica consiste em salvar uma quantidade de valores para poder agilizar o tempo de resposta do cálculo do
 Fibonacci e somente após ultrapassar uma quantidade pré-estabelecida números, realmente calcular o Fibonacci!
 
