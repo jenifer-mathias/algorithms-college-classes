@@ -14,6 +14,7 @@ long long int fibonacci(int numero) {
     fib[numero] = fibonacci(numero - 1) + fibonacci(numero - 2);
     return fib[numero];
 }
+
 int main() {
     printf("**** Fibonacci usando a técnica de memoização ****");
     int numero;
