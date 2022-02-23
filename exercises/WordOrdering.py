@@ -15,8 +15,8 @@ teremos palavras repetidas, mas podemos ter palavras com somente um caractere. "
 
 
 def manipulateFile(orderedOutput):
-    pathFile = "/"  # replace with your path
-    file = open(pathFile + 'words.txt', 'r')
+    filePath = "/"  # replace with your path
+    file = open(filePath + 'words.txt', 'r')
     print('Antes da ordenação:\n')
     for line in file:
         vector = line.lower().strip().split(' ')
