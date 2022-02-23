@@ -1,5 +1,4 @@
-"""
-Crie um programa para ordenar palavras em uma linha do arquivo pelo seu tamanho, neste caso, uma
+""" Crie um programa para ordenar palavras em uma linha do arquivo pelo seu tamanho, neste caso, uma
 palavra é definida como uma sequência de letras, maiúsculas ou minúsculas, as palavras com apenas
 uma letra também deverão ser consideradas. Seu programa fará a leitura de várias linhas de um arquivo
 texto, e em seguida, deverá imprimir as palavras de uma linha em ordem decrescente em função do
