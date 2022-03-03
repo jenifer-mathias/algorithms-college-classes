@@ -12,7 +12,7 @@ def mostraResultado(valor, iteracao):
         vetor.append(expressao)
 
         condParada += 1
-        mudaValor = mudaValor + 1
+        mudaValor += 1
 
     resultado = 0
     for numero in vetor:
