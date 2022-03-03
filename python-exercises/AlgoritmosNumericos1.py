@@ -2,16 +2,16 @@ def mostraResultado(valor, iteracao):
     vetor = []
     constCasasDecimais = 4
     const = 1 + valor
-    condParada = 1
+    fim = 1
     mudaValor = 2
     vetor.append(float(const))
 
-    while condParada <= iteracao:
+    while fim <= iteracao:
         potencia = valor ** mudaValor
         expressao = float(potencia / (calculaFat(mudaValor)))
         vetor.append(expressao)
 
-        condParada += 1
+        fim += 1
         mudaValor += 1
 
     resultado = 0
