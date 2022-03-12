@@ -22,8 +22,22 @@ int cortaHaste(int preco[], int tamanhoCorteHaste) {
     }
 }
 
+/** Resolução do professor */
+int cortaHasteProf(int n, int p[]) {
+    if (n == 0) return 0;
+    int i, maximo = -1;
+    for (i = 1; i <= n; i++) {
+        int temp = p[i] + cortaHasteProf(n - i, p);
+        if (temp > maximo) maximo = temp;
+    }
+    return maximo;
+}
+
 int main() {
-    int preco[] = {1, 5, 8, 9, 10, 17, 17, 20, 24, 30};           /** Exemplo da aula */
+    int preco[] = {1, 5, 8, 9, 10, 17, 17, 20, 24, 30};                     /** Exemplo da aula */
+
+    int precoProf[11] = {0, 1, 5, 8, 9, 10, 17, 17, 20, 24, 30};            /** Exemplo prof */
     printf("\n**** Corte da haste - solução ingênua ****\n");
     printf("\nMelhor preço de acordo com o corte da haste: R$ %.2f\n", (float) cortaHaste(preco, 10));
+    printf("\nMelhor preço de acordo com o corte da haste: R$ %.2f\n", (float) cortaHasteProf(10, precoProf));
 }
