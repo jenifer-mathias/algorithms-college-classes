@@ -9,7 +9,7 @@
 
 .DS_Store
 /c-exercises/.idea/vcs.xml
-CMakeLists.txt
+class-exercises/CMakeLists.txt
 cmake-build-debug
 /**/.idea/*
 CMakeFiles

@@ -5,8 +5,8 @@ sendo que o número de linhas e colunas são lidos do teclado. A área de memór
 #include <iostream>
 using namespace std;
 
-int main(){
-    cout << "Exercicio 3" << endl;
+int main() {
+    cout << "\nExercicio 3" << endl;
 
     int **mat; //mat[n][m]
     int l,c,n,m;
