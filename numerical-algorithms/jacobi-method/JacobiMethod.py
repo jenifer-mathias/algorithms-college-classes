@@ -4,8 +4,8 @@ def calculaAproximaca(arr):
     print("\n")
 
 
-def calculaJacobi(matrizAumento, resultadoAumento, tamanho, aproximacao=None, numeroMaximoIteracoes=100,
-                  tolerancia=1e-3):
+def calculaJacobiMethod(matrizAumento, resultadoAumento, tamanho, aproximacao=None, numeroMaximoIteracoes=100,
+                        tolerancia=1e-3):
     if aproximacao is None:
         aproximacao = [0 for _ in range(tamanho)]
 
@@ -56,8 +56,6 @@ def calculaJacobi(matrizAumento, resultadoAumento, tamanho, aproximacao=None, nu
 
 
 def main():
-    numeroMaximoIteracoes = 100
-
     matriz = [[10, -1, 2, 0],
               [-1, 11, -1, 3],
               [2, -1, 10, -1],
@@ -67,7 +65,7 @@ def main():
     tamanho = len(resultadoArray)
     aproximacaoInicial = [0 for _ in range(tamanho)]
 
-    calculaJacobi(matriz, resultadoArray, tamanho, aproximacaoInicial, numeroMaximoIteracoes, 0.0001)
+    calculaJacobiMethod(matriz, resultadoArray, tamanho, aproximacaoInicial, tolerancia=0.0001)
 
 
 if __name__ == '__main__':
