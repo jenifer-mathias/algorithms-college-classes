@@ -10,5 +10,5 @@ CMakeLists.txt
 
 # Local History for Visual Studio Code
 .history/
-.idea/
+/**/.idea/*
 .DS_Store
