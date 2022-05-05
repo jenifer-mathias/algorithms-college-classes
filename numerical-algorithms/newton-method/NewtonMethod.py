@@ -1,3 +1,13 @@
+""" *********************************
+
+ MÉTODO DE NEWTON
+ Algorítmos Numéricos - 4N
+
+ Nome: Jenifer Mathias dos Santos
+ TIA: 32092946
+
+********************************* """
+
 from math import e, cos, sin, log
 from sympy import Symbol, diff
 
