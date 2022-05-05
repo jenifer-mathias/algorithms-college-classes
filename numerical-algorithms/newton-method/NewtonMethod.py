@@ -6,6 +6,9 @@
  Nome: Jenifer Mathias dos Santos
  TIA: 32092946
 
+ Nome: Lucas Martins de Souza
+ TIA: 31943187
+
 ********************************* """
 
 from math import e, cos, sin, log
