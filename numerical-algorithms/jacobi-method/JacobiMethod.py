@@ -1,11 +1,11 @@
-def calculaAproximaca(arr):
+def calculaAproximacao(arr):
     for i in range(len(arr)):
         print("x%s: %.5f\t" % (i + 1, arr[i]), end=' ')
     print("\n")
 
 
-def calculaJacobiMethod(matrizAumento, resultadoAumento, tamanho, aproximacao=None, numeroMaximoIteracoes=100,
-                        tolerancia=1e-3):
+def calculaMetodoDeJacobi(matrizAumento, resultadoAumento, tamanho, aproximacao=None, numeroMaximoIteracoes=100,
+                          tolerancia=1e-3):
     if aproximacao is None:
         aproximacao = [0 for _ in range(tamanho)]
 
@@ -29,7 +29,7 @@ def calculaJacobiMethod(matrizAumento, resultadoAumento, tamanho, aproximacao=No
                 for j in range(tamanho):
                     soma += matrizAumento[i][j] * segundaAproximacao[j]
                 segundaAproximacao[i] = soma + resultadoAumento[i]
-            calculaAproximaca(segundaAproximacao)
+            calculaAproximacao(segundaAproximacao)
 
             if (max(aproximacao) != 0) and \
                     (abs(max(segundaAproximacao) - max(aproximacao)) / abs(max(aproximacao))) < tolerancia:
@@ -43,7 +43,7 @@ def calculaJacobiMethod(matrizAumento, resultadoAumento, tamanho, aproximacao=No
                     for j in range(tamanho):
                         soma += matrizAumento[i][j] * segundaAproximacao[j]
                     aproximacao[i] = soma + resultadoAumento[i]
-                calculaAproximaca(aproximacao)
+                calculaAproximacao(aproximacao)
 
             if (max(aproximacao) != 0) and \
                     abs(max(aproximacao) - max(segundaAproximacao)) / abs(max(segundaAproximacao)) < tolerancia:
@@ -65,7 +65,7 @@ def main():
     tamanho = len(resultadoArray)
     aproximacaoInicial = [0 for _ in range(tamanho)]
 
-    calculaJacobiMethod(matriz, resultadoArray, tamanho, aproximacaoInicial, tolerancia=0.0001)
+    calculaMetodoDeJacobi(matriz, resultadoArray, tamanho, aproximacaoInicial, tolerancia=0.0001)
 
 
 if __name__ == '__main__':
