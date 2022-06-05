@@ -2,6 +2,10 @@
 
 **TIA: 32092946**
 
+**Giulia Barbieri Quagliano**
+
+**TIA: 42013070**
+
 # Projeto-02
 
 ## Descrição

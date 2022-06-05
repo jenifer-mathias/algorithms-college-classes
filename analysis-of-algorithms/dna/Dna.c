@@ -3,6 +3,9 @@
  Nome: Jenifer Mathias dos Santos
  TIA: 32092946
 
+ Giulia Barbieri Quagliano
+ TIA: 42013070
+
 ****************************************************************** */
 
 #include <stdio.h>
