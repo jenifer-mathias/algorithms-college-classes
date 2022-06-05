@@ -3,8 +3,11 @@
  Nome: Jenifer Mathias dos Santos
  TIA: 32092946
 
- Giulia Barbieri Quagliano
+ Nome: Giulia Barbieri Quagliano
  TIA: 42013070
+
+ Nome: Lucas Martins de Souza
+ TIA: 31943187
 
 ****************************************************************** */
 
