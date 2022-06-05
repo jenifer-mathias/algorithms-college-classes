@@ -107,10 +107,6 @@ int maiorElemento(int string1, int string2) {
     }
 }
 
-void abreOArquivo() {
-
-}
-
 /** verifica se o arquivo existe e caso existir, percorre o arquivo e adiciona 1 ao contador cada vez que
  * encontra um elemento no arquivo. Depois fecha o arquivo */
 int devolveTamanhoConteudoArquivo(FILE* arquivoString, char *nomeArquivo) {
@@ -135,11 +131,12 @@ void manipulaArquivos() {
     FILE *arquivoString1 = NULL;
     FILE *arquivoString2 = NULL;
 
+    /** Mude o path para corresponder aos seus arquivos de texto */
     char *pathArquivo1 = "/Users/jenifer.santos/algorithms-fourth-semester/analysis-of-algorithms/dna/string1.txt";
     char *pathArquivo2 = "/Users/jenifer.santos/algorithms-fourth-semester/analysis-of-algorithms/dna/string2.txt";
 
     conteudoArquivo1[devolveTamanhoConteudoArquivo(arquivoString1, pathArquivo1) + 1];
-    conteudoArquivo2[devolveTamanhoConteudoArquivo(arquivoString2,pathArquivo2) + 1];
+    conteudoArquivo2[devolveTamanhoConteudoArquivo(arquivoString2, pathArquivo2) + 1];
 
     /** abre os arquivos */
     arquivoString1 = fopen(pathArquivo1, FILE_MODE);

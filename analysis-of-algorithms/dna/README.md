@@ -8,7 +8,7 @@
 
 Aplicações biológicas frequentemente precisam comparar o DNA de dois ou mais diferentes organismos.
 Um filamento de DNA consiste de uma string de moléculas chamadas bases, onde os possíveis bases são adenina,
-guanina, citosina e tiamina. Representando cada uma destas bases pela letra inicial, podemos expressar
+guanina, citosina e timina. Representando cada uma destas bases pela letra inicial, podemos expressar
 um filamento de DNA como uma string sobre um conjunto finito {A, C, G, T }.
 Uma razão para comparar dois filamentos de DNA é determinar quão similares dois filamentos são,
 como uma medida do quão proximamente relacionados os dois organismos estão. Nós podemos encontrar um terceiro
@@ -32,6 +32,7 @@ de tamanho máximo de X e Y.
 Escreva um programa em Linguagem C que lê duas strings de tamanho até 1000 e determina a LCS entre elas.
 A entrada se dará por meio de dois arquivos texto de nome: string1 e string2 com até 1000 caracteres cada um,
 dispostos um em seguida ao outro, sem saltos forçados de linha.
+Comente o seu programa.
 
 ## Resolução
 
