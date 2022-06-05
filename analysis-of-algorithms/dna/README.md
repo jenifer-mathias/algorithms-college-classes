@@ -1,3 +1,7 @@
+**Nome: Jenifer Mathias dos Santos**
+
+**TIA: 32092946**
+
 # Projeto-02
 
 ## Descrição
@@ -38,6 +42,9 @@ foi usado o [Random DNA Sequence Generator](http://www.faculty.ucr.edu/~mmaduro/
 ### Referências
 
 <https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/>
+
 <https://github.com/lucasrbk/projeto-LCS>
+
 <https://www.techiedelight.com/longest-common-subsequence/>
+
 <https://users.monash.edu/~lloyd/tildeStrings/Alignment/86.IPL.html>
