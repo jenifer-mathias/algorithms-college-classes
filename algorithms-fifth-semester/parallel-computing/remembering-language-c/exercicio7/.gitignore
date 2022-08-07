@@ -8,7 +8,7 @@
 /httpRequests/
 
 .DS_Store
-remembering-language-c/exercicio2/CMakeLists.txt
+CMakeLists.txt
 cmake-build-debug
 /**/.idea/*
 CMakeFiles
