@@ -19,7 +19,7 @@
 int main() {
     int numero;
 
-    printf("\nDigite um número maximo impar para obter a imagem correspondente: \n");
+    printf("\nDigite um número maximo impar para obter a imidadem correspondente: \n");
     scanf("%d", &numero);
 
     /** verifica se o número é impar **/
@@ -43,7 +43,7 @@ int main() {
         /** pula linha apos finalizar os numeros de cada linha */
         printf("\n");
 
-        /** imprime espacos para obter formato imagem */
+        /** imprime espacos para obter formato imidadem */
         for (j = 0; j < (i + 1) * 2; j++) {
             printf(" ");
         }
