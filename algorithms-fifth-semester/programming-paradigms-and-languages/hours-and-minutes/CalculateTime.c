@@ -34,7 +34,7 @@ void calculateTime(int timeInMinutes, tempo time) {
         differenceMinutes = minutes - ONE_HOUR_EQUIVALENT_IN_MINUTES;
         printf("\nTempo: %ihs:%imin\n", sumHour, differenceMinutes);
     } else {
-        printf("\nTempo: %ihs:%imin\n", time.horas, time.minutos);
+        printf("\nTempo: %ihs:%imin\n", time.horas, minutes);
     }
 }
 
