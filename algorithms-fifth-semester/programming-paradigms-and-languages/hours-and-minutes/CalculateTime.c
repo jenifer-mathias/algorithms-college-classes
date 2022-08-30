@@ -17,7 +17,6 @@
 #include  <stdio.h>
 
 #define ONE_HOUR_EQUIVALENT_IN_MINUTES 60
-#define ONE_HOUR 1
 
 typedef struct {
     int horas;
@@ -27,15 +26,10 @@ typedef struct {
 void calculateTime(int timeInMinutes, tempo time) {
     int minutes = timeInMinutes + time.minutos;
 
-    int differenceMinutes;
-    int sumHour = time.horas + ONE_HOUR;
+    int hour = time.horas + (minutes / ONE_HOUR_EQUIVALENT_IN_MINUTES);
+    int min = minutes % ONE_HOUR_EQUIVALENT_IN_MINUTES;
 
-    if (minutes >= ONE_HOUR_EQUIVALENT_IN_MINUTES) {
-        differenceMinutes = minutes - ONE_HOUR_EQUIVALENT_IN_MINUTES;
-        printf("\nTempo: %ihs:%imin\n", sumHour, differenceMinutes);
-    } else {
-        printf("\nTempo: %ihs:%imin\n", time.horas, minutes);
-    }
+    printf("\nTempo: %ihs:%imin\n", hour, min);
 }
 
 int main() {
