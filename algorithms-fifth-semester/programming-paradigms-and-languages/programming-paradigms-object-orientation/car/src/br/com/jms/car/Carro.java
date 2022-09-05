@@ -1,29 +1,30 @@
 package br.com.jms.car;
 
 public class Carro {
-    double quantidadeCombustivel = 0;
+    float quantidadeCombustivel;
 
     public Carro() {
+        this.quantidadeCombustivel = 0.00f;
     }
 
-    public double getQtdCombustivel() {
+    public Float getQtdCombustivel() {
         return quantidadeCombustivel;
     }
 
-    public void setQtdCombustivel(double quantidadeCombustivel) {
+    public void setQtdCombustivel(float quantidadeCombustivel) {
         this.quantidadeCombustivel = quantidadeCombustivel;
     }
 
-    public void adicionarCombustivel(int qtdCombustivel) {
+    public void adicionarCombustivel(float qtdCombustivel) {
         setQtdCombustivel(getQtdCombustivel() + qtdCombustivel);
     }
 
-    public Double obterCombustivel() {
+    public Float obterCombustivel() {
         return getQtdCombustivel();
     }
 
-    public void andar(int distanciaKm) {
-        setQtdCombustivel(getQtdCombustivel() - (distanciaKm * 0.20));
+    public void andar(float distanciaKm) {
+        setQtdCombustivel((getQtdCombustivel() - (distanciaKm * 0.20f)));
     }
 }
 
@@ -34,10 +35,10 @@ class Main {
 
         Carro carro = new Carro();
 
-        carro.adicionarCombustivel(20);
+        carro.adicionarCombustivel(20.00f);
 
-        carro.andar(80);
+        carro.andar(80.00f);
 
-        System.out.println("\nLitros de combustível no tanque: \n" + carro.obterCombustivel()); // imprime 4.0
+        System.out.printf("\nLitros de combustível no tanque: \n%.2f", carro.obterCombustivel());
     }
 }
