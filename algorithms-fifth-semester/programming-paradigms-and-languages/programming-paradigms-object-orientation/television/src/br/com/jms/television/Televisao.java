@@ -2,9 +2,10 @@ package br.com.jms.television;
 
 class Televisao {
     int canal;
-    int volume = 0;
+    int volume;
 
     public Televisao() {
+        this.volume = 0;
     }
 
     public int getVolume() {
