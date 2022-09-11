@@ -1,18 +1,18 @@
 package br.com.jms.television;
 
 class Televisao {
-    int canal;
-    int volume;
+    Integer canal;
+    Integer volume;
 
     public Televisao() {
         this.volume = 0;
     }
 
-    public int getVolume() {
+    public Integer getVolume() {
         return volume;
     }
 
-    public int getCanal() {
+    public Integer getCanal() {
         return canal;
     }
 
@@ -34,24 +34,5 @@ class Televisao {
 
     public void alterarCanal(int canal) {
         setCanal(canal);
-    }
-}
-
-class Main {
-    public static void main(String[] args) {
-
-        Televisao tv = new Televisao();
-
-        tv.alterarCanal(6);
-        tv.aumentarVolume();
-        tv.aumentarVolume();
-        tv.aumentarVolume();
-        tv.diminuirVolume();
-
-        System.out.println("\n* * * * Controla TV * * * *");
-
-        System.out.printf("\nA TV está no canal %d\n", tv.canal); // A tv está no canal 6
-
-        System.out.printf("\nA TV está no volume %d\n", tv.volume); // A tv está no volume 2
     }
 }
