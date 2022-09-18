@@ -1,4 +1,4 @@
-package br.com.jms.immobile;
+package br.com.jms.imovel;
 
 public class Main {
     public static void main(String[] args) {

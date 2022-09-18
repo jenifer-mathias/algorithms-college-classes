@@ -1,4 +1,4 @@
-package br.com.jms.person;
+package br.com.jms.pessoa;
 
 public class Main {
     public static void main(String[] args) {

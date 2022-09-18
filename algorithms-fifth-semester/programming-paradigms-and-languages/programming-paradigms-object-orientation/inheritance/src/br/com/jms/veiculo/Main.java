@@ -1,4 +1,4 @@
-package br.com.jms.vehicle;
+package br.com.jms.veiculo;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package br.com.jms.person;
+package br.com.jms.pessoa;
 
 public class PessoaFisica extends Pessoa {
     String rg;
