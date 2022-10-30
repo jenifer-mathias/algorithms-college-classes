@@ -7,9 +7,10 @@
 /dataSources.local.xml
 /httpRequests/
 
-.DS_Store
+**/.DS_Store
 remembering-languidade-c/exercicio2/CMakeLists.txt
 cmake-build-debug
 /**/.idea/*
 CMakeFiles
 CMakeCache.txt
+.vscode/
